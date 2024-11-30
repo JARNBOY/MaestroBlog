@@ -1,0 +1,15 @@
+# ios flow.yaml
+
+appId: com.papon.AppQuiz
+---
+# Open App
+- launchApp
+# Verify First Screen
+- assertVisible: "Quiz App!"
+- assertVisible: "Welcome"
+- assertVisible: "Please Enter Your Name.."
+- tapOn: "e.g. JARNBOY"
+- inputText: "Hello World"
+- tapOn:
+    id: "Return"
+- tapOn: "START"

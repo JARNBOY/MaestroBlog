@@ -1,0 +1,15 @@
+# andriod flow.yaml
+
+appId: com.example.myquizapp
+---
+# Open App
+- launchApp
+# Verify First Screen
+- assertVisible: "Quiz App!"
+- assertVisible: "Welcome"
+- assertVisible: "Please Enter Your Name.."
+- tapOn: "e.g. JARNBOY"
+- inputText: "Hello World"
+- tapOn:
+    point: "92%,91%"
+- tapOn: "START"
